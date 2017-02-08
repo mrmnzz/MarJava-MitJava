@@ -1,0 +1,71 @@
+OBJECT ORIENTED SYSTEMS LABORATORY ASSIGNMENTS – FIRST SHEET
+JAVA PROGRAMS
+
+Instructions:
+• This is the first assignment sheet
+• Evaluation Date: [20/02/2017 for GROUP1 and 22/02/2017 for GROUP2]
+
+
+1. Write a class queue with methods enqueue() and dequeue(). The queue should be able to store integers, floating
+point numbers or characters but all entries of one particular queue object will have homogeneous data types. Overload
+methods and constrictors as necessary.
+
+2. A system uses a hexadecimal memory representation that stores either integer or string data. Integer data takes 4 bytes
+while string type data takes 2 bytes per character of memory. Each cell of memory location can hold 1 byte of data.
+Declare a class memory with appropriate constructor.
+Another class calculations inherits class memory. This class has some functions including isInt() and isString() that
+decides whether the data is an integer or string and calculates the next free memory location accordingly.
+Another class inheritance that inherits class calculations overrides some functions of its parent class.Write a main
+function in class inheritance that takes two objects. The memory location of these objects are set by the user in decimal
+format and some data is set to those memory locations through these objects. The program should check whether these
+data can be allocated to the selected memory locations, based on their data types.
+
+3. A system maintains a catalogue of notes and books arranged in ascending order based on the number of pages for
+notes and weight for books, calculated from its length, breadth and width. Each element (note or book) is provided with
+an index number mapped to its name.
+Write a class in JAVA that implements catalogue interface having a function weight() that accepts an object as
+parameter. The class must contain a method that accepts array of objects as parameter and calls the weight() function
+multiple times to arrange the names in the catalogue in sorted order. Apply a search on this catalogue of books and notes
+to find a particular note or book and print its index number.
+
+4. A company stores the record of its employees, their year of joining, and salary in a file (record.text). Write a program
+that will read one such file and sort the details in ascending order of salary recieved by the employees. Write these
+details into another file named “new_record.text” and sign the old record file “Updated by: <your name>”.
+
+5. A file contains a series of jumbled words. Another file contains the list of proper words that can be constructed by
+arranging the jumbled words. Write a program that will read the two files and match each jumbled word to its proper
+form and print them.
+
+==============================================================================================================================
+
+
+OBJECT ORIENTED SYSTEMS LABORATORY ASSIGNMENTS – SECOND SHEET
+JAVA PROGRAMS
+
+Instructions:
+• This is the second assignment sheet
+• Evaluation Date: [6/03/2017 for GROUP1 and 8/03/2017 for GROUP2]
+
+
+1. Assume there are two threads T1 and T2. T1 generates random numbers and stores enqueues them. T2 dequeues ten
+numbers and prints them.
+Extend the class queue , the new class should contain methods to start and stop T1 .T2 should be invoked by the
+constructor. The method that stops T1 should empty the queue in use by printing its contents.
+
+2. Write a class with methods to perform quick sort and merge sort. Include another method that generates a 100 random
+number in range [0, 99999]. Then in to parallel threads sort the entire list by merge and quick and stores which method
+finished first in a counter. Write another method to display which method was faster and the number of list sorted.
+
+3. Extend the class queue such that class sortedQueue has a method to sort the queue. Use an inner class to inherit the
+sorting methods from question 7.
+
+4. Write a program to implement list in JAVA. Define a class list that has 2 methods, addnode() and deletenode().
+Perform the below operations:
+• shallow clone
+• deep clone
+Shallow clone is copying the reference pointer to the object which means the new object is pointing to the same
+memory reference of the old object and deep copy is the copy of the object itself. A new memory is allocated for the
+object and the contents are copied.
+
+5. Implement a stack in JAVA using linked list which has 2 methods: push() and pop(). Note that the nodes individually
+can be of varied datatypes (int, float, char etc).
